@@ -1,0 +1,121 @@
+/*.my-repeat-animation.ng-enter,*/
+/*.my-repeat-animation.ng-leave,*/
+/*.my-repeat-animation.ng-move {*/
+    /*-webkit-transition: 1s linear all;*/
+    /*transition: 1s linear all;*/
+    /*position:relative;*/
+/*}*/
+
+/*.my-repeat-animation.ng-enter {*/
+    /*left:-50px;*/
+    /*opacity:0;*/
+
+/*}*/
+/*.my-repeat-animation.ng-enter.my-repeat-animation.ng-enter-active {*/
+    /*left:0;*/
+    /*opacity:1;*/
+
+/*}*/
+
+/*.my-repeat-animation.ng-leave {*/
+    /*left:0;*/
+    /*opacity:1;*/
+    /*height: 30px;*/
+
+/*}*/
+/*.my-repeat-animation.ng-leave.my-repeat-animation.ng-leave-active {*/
+    /*left:-50px;*/
+    /*opacity:0;*/
+    /*height: 0px;*/
+/*}*/
+
+/*.my-repeat-animation.ng-move {*/
+    /*opacity:0.5;*/
+    /*height: 30px;*/
+
+/*}*/
+/*.my-repeat-animation.ng-move.my-repeat-animation.ng-move-active {*/
+    /*opacity:1;*/
+    /*height: 0px;*/
+/*}*/
+
+    .animate.ng-enter {
+        -webkit-animation: enter-sequence 600ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+        animation: enter-sequence 600ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+        display: block;
+        position: relative;
+    }
+    @-webkit-keyframes enter-sequence {
+        from {
+            opacity: 0;
+            height: 0px;
+            left: -70px;
+        }
+        75% {
+            left: 15px;
+        }
+        to {
+            opacity: 1;
+            height: 30px;
+            left: 0px;
+        }
+    }
+    @keyframes enter-sequence {
+        from {
+            opacity: 0;
+            height: 0px;
+            left: -70px;
+        }
+        75% {
+            left: 15px;
+        }
+        to {
+            opacity: 1;
+            height: 30px;
+            left: 0px;
+        }
+    }
+
+    .animate.ng-leave {
+        -webkit-animation: leave 600ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+        animation: leave 600ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+        display: block;
+        position: relative;
+    }
+    @-webkit-keyframes leave {
+        to {
+            opacity: 0;
+            height: 0px;
+            left: -70px;
+        }
+        25% {
+            left: 15px;
+        }
+        from {
+            opacity: 1;
+            height: 30px;
+            left: 0px;
+        }
+    }
+    @keyframes leave {
+        to {
+            opacity: 0;
+            height: 0px;
+            left: -70px;
+        }
+        25% {
+            left: 15px;
+        }
+        from {
+            opacity: 1;
+            height: 30px;
+            left: 0px;
+        }
+    }
+
+
+    .sameline{
+
+        display:inline-block;
+    }
+
